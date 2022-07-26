@@ -1,16 +1,20 @@
-import { Header } from '../components/Header';
-import heroBackground from '../assets/hero_background.png';
-import Image from 'next/image';
+import Head from "next/head";
+import { Header } from "../components/Header";
+import { Main } from "../components/Main";
+import { Hero } from "../components/Hero/Hero";
 
 export const Home = () => {
   return (
     <>
+      <Head>
+        <title>Comsa</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Header />
-      <main className="pt-16">
-        <Image src={heroBackground} alt="pest control" objectFit="cover" />
-        <div className="bgred w-2 h-screen" />
-        <div className="bg-blue-500 w-2 h-screen" />
-      </main>
+      <Main>
+        <Hero />
+      </Main>
+      <div className="container mx-auto h-64 bg-red-500" />
     </>
   );
 };
