@@ -37,6 +37,7 @@ export const Services = () => {
             src={services}
             alt="servicios"
             width={250}
+            height={250}
             objectFit="contain"
             objectPosition="top"
           />

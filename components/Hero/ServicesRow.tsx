@@ -7,7 +7,7 @@ import { Icon } from "../Icon";
 
 export const ServicesRow = () => {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="hidden flex-wrap gap-4 md:flex">
       <Button>
         <Icon src={rat} alt="rat" />
         <span className="hidden md:inline">Desratización</span>

@@ -25,11 +25,13 @@ const Content = () => {
       <Logo />
       <Divider />
       <div className="flex flex-col items-center gap-8 md:items-start">
-        <Title className="text-white">Líderes en control de plagas</Title>
+        <Title className="text-center text-white">
+          Líderes en control de plagas
+        </Title>
         <ServicesRow />
       </div>
       <div className="flex flex-col flex-wrap items-center gap-6 md:flex-row">
-        <Subtitle className="text-white">
+        <Subtitle className="text-center font-light text-white md:text-left md:font-semibold">
           Solicite su presupuesto sin cargo
         </Subtitle>
         <Button variant="primary">¡Contactanos!</Button>

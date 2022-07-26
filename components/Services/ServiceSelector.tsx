@@ -2,7 +2,7 @@ import { Card } from "../Card";
 import { Divider } from "../Divider";
 import { Icon } from "../Icon";
 import { Radio } from "../Radio";
-import { Paragraph } from "../Text";
+import { Paragraph, Subtitle } from "../Text";
 
 import cockroach from "../../assets/cockroach_black.png";
 import rat from "../../assets/rat_black.png";
@@ -72,10 +72,11 @@ export const ServiceSelector = () => {
   );
 };
 
-const ServiceSelectorItem = ({ service }: { service: string }) => {
+const ServiceSelectorItem = ({ service }: { service: Service }) => {
   if (service === "desratizacion") {
     return (
       <>
+        <Subtitle>Desratización</Subtitle>
         <Paragraph>
           Dar prioridad a exclusión y saneamiento del medio con la visita previa
         </Paragraph>
@@ -95,6 +96,7 @@ const ServiceSelectorItem = ({ service }: { service: string }) => {
   } else if (service === "desinsectacion") {
     return (
       <>
+        <Subtitle>Desinsectación</Subtitle>
         <Paragraph>
           Debido a la gran cantidad de especies de insectos que existen, nos
           hemos especializado en aquellos que tienen una real importancia
@@ -122,18 +124,22 @@ const ServiceSelectorItem = ({ service }: { service: string }) => {
     );
   } else if (service === "desinfeccion") {
     return (
-      <Paragraph>
-        El tratamiento de desinfección está destinado a controlar hongos,
-        bacterias y virus para lograr una disminución del contagio de
-        enfermedades en plantas industriales, bancos, comercios, escuelas, etc.,
-        mediante pulverizaciones con poderosos germicidas especialmente en
-        baños, vestuarios, lugares de gran circulación de personas y lugares
-        afectados.
-      </Paragraph>
+      <>
+        <Subtitle>Desinfección</Subtitle>
+        <Paragraph>
+          El tratamiento de desinfección está destinado a controlar hongos,
+          bacterias y virus para lograr una disminución del contagio de
+          enfermedades en plantas industriales, bancos, comercios, escuelas,
+          etc., mediante pulverizaciones con poderosos germicidas especialmente
+          en baños, vestuarios, lugares de gran circulación de personas y
+          lugares afectados.
+        </Paragraph>
+      </>
     );
   } else if (service === "control-de-murcielagos") {
     return (
       <>
+        <Subtitle>Control de murciélagos</Subtitle>
         <Paragraph>
           Por los beneficios ecosistémicos que los muercielos ofrecen,
           procuramos su relocalización el lugares donde no sean molestos y sigan
@@ -148,6 +154,7 @@ const ServiceSelectorItem = ({ service }: { service: string }) => {
   } else if (service === "desinfeccion-por-covid-19") {
     return (
       <>
+        <Subtitle>Desinfección por COVID-19</Subtitle>
         <Paragraph>
           En caso de que su propiedad o ambiente de trabajo se haya expuesto al
           COVID-19 lo desinfectamos con amonio cuaternario con un equipo de
