@@ -6,7 +6,7 @@ import { DarkCard } from "./DarkCard";
 
 export const CertificateCard = () => {
   return (
-    <DarkCard>
+    <DarkCard className="items-center self-center">
       <div className="hidden items-center lg:flex">
         <Image src={certificate} alt="certificate" height={24} width={24} />
       </div>

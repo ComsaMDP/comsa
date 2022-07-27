@@ -4,17 +4,16 @@ import { CertificateCard } from "./CertificateCard";
 import { Logo } from "./Logo";
 import { Divider } from "../Divider";
 import { Stack } from "../Stack";
-import { Background } from "./Background";
+import { Background } from "../Background";
 import { ServicesRow } from "./ServicesRow";
+import heroBackground from "../../assets/hero_background.png";
 
 export const Hero = () => {
   return (
-    <>
-      <div className="relative h-screen max-h-[1080px]  w-full">
-        <Background />
-        <Content />
-      </div>
-    </>
+    <div className="relative h-screen max-h-[1080px]  w-full">
+      <Background src={heroBackground} alt="control de plagas" />
+      <Content />
+    </div>
   );
 };
 
