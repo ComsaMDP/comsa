@@ -11,22 +11,22 @@ import { Divider } from "../Divider";
 export const Contact = () => {
   return (
     <div className="flex flex-col">
-      <div className="relative h-auto max-h-[1080px] w-full overflow-visible pt-16 md:h-screen">
+      <div className="relative h-auto max-h-[1080px] w-full overflow-visible pt-16 ">
         <Background src={contactBackground} alt="control de plagas" />
         <Content />
       </div>
-      <StyledMap className="md:hidden" />
+      <StyledMap className="lg:hidden" />
     </div>
   );
 };
 
 const Content = () => {
   return (
-    <div className="container relative z-10 mx-auto flex flex-col gap-10 overflow-visible px-4 py-6 text-white md:flex-row md:pt-16 lg:px-8">
+    <div className="container relative z-10 mx-auto flex flex-col gap-10 overflow-visible px-4 py-6 text-white md:pt-16 lg:flex-row lg:px-8">
       <ContactOptions />
-      <Divider variant="secondary" className="md:hidden" />
-      <LocationText className="text-sm md:hidden" />
-      <StyledMap className="hidden md:flex" />
+      <Divider variant="secondary" className="lg:hidden" />
+      <LocationText className="self-center text-sm lg:hidden" />
+      <StyledMap className="hidden lg:flex" />
     </div>
   );
 };
@@ -38,7 +38,7 @@ const StyledMap = ({ className }: { className?: string }) => {
 
   return (
     <div className={clsx("flex flex-1 flex-col items-center gap-2", className)}>
-      <LocationText className="hidden md:flex" />
+      <LocationText className="hidden lg:flex" />
       {isLoaded ? (
         <Map />
       ) : (
@@ -53,7 +53,7 @@ const Map = () => {
     <GoogleMap
       zoom={14}
       center={{ lat: MAP_LAT, lng: MAP_LNG }}
-      mapContainerClassName="md:rounded-lg h-[512px] w-full md:h-auto md:w-auto md:flex-1 md:self-stretch"
+      mapContainerClassName="lg:rounded-lg h-[512px] w-full lg:h-auto lg:w-auto lg:flex-1 lg:self-stretch"
       options={{
         disableDefaultUI: true,
         styles: [

@@ -34,15 +34,15 @@ export const ContactOptions = () => {
       <div className="flex flex-wrap gap-4">
         <Button>
           <Icon src={whatsapp} alt="whatsapp" />
-          <span className="hidden md:inline">WhatsApp</span>
+          <span className="hidden lg:inline">WhatsApp</span>
         </Button>
         <Button>
           <FiInstagram size={22} />
-          <span className="hidden md:inline">Instagram</span>
+          <span className="hidden lg:inline">Instagram</span>
         </Button>
         <Button>
           <FaFacebook size={22} />
-          <span className="hidden md:inline">Facebook</span>
+          <span className="hidden lg:inline">Facebook</span>
         </Button>
         <Button>
           <FaPhone />

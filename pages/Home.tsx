@@ -6,6 +6,7 @@ import { AboutUs } from "../components/AboutUs/AboutUs";
 import { Services } from "../components/Services/Services";
 import { Divider } from "../components/Divider";
 import { Contact } from "../components/Contact/Contact";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
@@ -15,13 +16,16 @@ export const Home = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      <Main>
-        <Hero />
-        <AboutUs />
-        <Divider variant="secondary" className="container mx-auto" />
-        <Services />
-        <Contact />
-      </Main>
+      <div className="flex flex-col">
+        <Main>
+          <Hero />
+          <AboutUs />
+          <Divider variant="secondary" className="container mx-auto" />
+          <Services />
+          <Contact />
+        </Main>
+        <Footer />
+      </div>
     </>
   );
 };
