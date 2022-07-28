@@ -10,19 +10,22 @@ import { Divider } from "../Divider";
 
 export const Contact = () => {
   return (
-    <div className="flex flex-col">
+    <section className="flex flex-col">
       <div className="relative h-auto max-h-[1080px] w-full overflow-visible pt-16 ">
         <Background src={contactBackground} alt="control de plagas" />
         <Content />
       </div>
       <StyledMap className="lg:hidden" />
-    </div>
+    </section>
   );
 };
 
 const Content = () => {
   return (
-    <div className="container relative z-10 mx-auto flex flex-col gap-10 overflow-visible px-4 py-6 text-white md:pt-16 lg:flex-row lg:px-8">
+    <div
+      id="contact"
+      className="container relative z-10 mx-auto flex flex-col gap-10 overflow-visible px-4 py-6 text-white md:pt-16 lg:flex-row lg:px-8"
+    >
       <ContactOptions />
       <Divider variant="secondary" className="lg:hidden" />
       <LocationText className="self-center text-sm lg:hidden" />

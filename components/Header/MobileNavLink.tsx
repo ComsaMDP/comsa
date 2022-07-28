@@ -1,12 +1,13 @@
-import clsx from 'clsx';
-import { BaseProps } from '../app/types';
+import clsx from "clsx";
+import { BaseProps } from "../../app/types";
 
 interface Props extends BaseProps {
   onClick: () => any;
 }
 
 export const MobileNavLink = ({ children, className, onClick }: Props) => {
-  const styles = 'flex items-center justify-center h-20 font-semibold text-lg cursor-pointer';
+  const styles =
+    "flex items-center justify-center h-20 font-semibold text-lg cursor-pointer";
 
   return (
     <li>

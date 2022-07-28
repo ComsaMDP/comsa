@@ -9,7 +9,7 @@ import { ServiceSelector } from "./ServiceSelector";
 
 export const Services = () => {
   return (
-    <Container>
+    <Container id={"services"}>
       <Title>Servicios</Title>
       <Divider />
       <Subtitle>Manejo integrado de plagas</Subtitle>

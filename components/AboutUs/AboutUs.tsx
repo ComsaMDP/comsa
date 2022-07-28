@@ -11,7 +11,7 @@ import { Button } from "../Button";
 
 export const AboutUs = () => {
   return (
-    <Container>
+    <Container id="about-us">
       <Title>¿Quienes somos?</Title>
       <Divider />
       <div className="flex flex-wrap gap-4">
