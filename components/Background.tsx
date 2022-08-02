@@ -15,6 +15,7 @@ export const Background = ({ src, alt }: Props) => {
           layout="fill"
           objectFit="cover"
           quality={100}
+          placeholder="blur"
         />
       </div>
     </div>
