@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BaseProps } from "../../app/types";
-import { Container } from "../Container";
+import { SectionContainer } from "../SectionContainer";
 import { Divider } from "../Divider";
 import { Item } from "../Item";
 import { Paragraph, Subtitle, Title } from "../Text";
@@ -9,7 +9,7 @@ import { ServiceSelector } from "./ServiceSelector";
 
 export const Services = () => {
   return (
-    <Container id={"services"}>
+    <SectionContainer id={"services"}>
       <Title>Servicios</Title>
       <Divider />
       <Subtitle>Manejo integrado de plagas</Subtitle>
@@ -59,7 +59,7 @@ export const Services = () => {
         </div>
       </div>
       <ServiceSelector />
-    </Container>
+    </SectionContainer>
   );
 };
 

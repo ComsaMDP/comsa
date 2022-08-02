@@ -9,7 +9,7 @@ import rat from "../../assets/rat_black.png";
 import virus from "../../assets/virus_black.png";
 import bat from "../../assets/bat_black.png";
 import microscope from "../../assets/microscope_black.png";
-import { useState } from "react";
+import { useServices } from "../../hooks/useServices";
 
 type Service =
   | "desratizacion"
@@ -19,12 +19,11 @@ type Service =
   | "desinfeccion-por-covid-19";
 
 export const ServiceSelector = () => {
-  const [serviceSelected, setServiceSelected] =
-    useState<Service>("desratizacion");
+  const { serviceSelected, setServiceSelected } = useServices();
 
   return (
     <Card>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4" id="services-details">
         <Radio
           selected={serviceSelected === "desratizacion"}
           onClick={() => setServiceSelected("desratizacion")}

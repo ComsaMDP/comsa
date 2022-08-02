@@ -4,27 +4,18 @@ import { Icon } from "../Icon";
 import { Paragraph, Subtitle, Title } from "../Text";
 
 import whatsapp from "../../assets/whatsapp.svg";
-import mail from "../../assets/mail.png";
 import { FiInstagram, FiMail } from "react-icons/fi";
 import { FaFacebook, FaPhone } from "react-icons/fa";
-import { Card } from "../Card";
-import { useState } from "react";
-import { Input, Textarea } from "../Input";
+import {
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+  MAIL_URL,
+  PHONE_URL,
+  WHATSAPP_URL,
+} from "../../app/constants";
+import { ContactForm } from "./ContactForm";
 
 export const ContactOptions = () => {
-  const initialData = { name: "", email: "", message: "" };
-  const [data, setData] = useState(initialData);
-
-  const setter = (name: "name" | "email" | "message") => {
-    return {
-      name,
-      value: data[name],
-      onChange: (value: string) => {
-        setData({ ...data, [name]: value });
-      },
-    };
-  };
-
   return (
     <div className="min-w-md flex flex-1 flex-col gap-6 pt-8">
       <Title>Contacto</Title>
@@ -32,46 +23,38 @@ export const ContactOptions = () => {
       <Subtitle>¡Solicite su presupuesto sin cargo!</Subtitle>
       <Paragraph>Lunes a Viernes de 08:00 a 17:00hs</Paragraph>
       <div className="flex flex-wrap gap-4">
-        <Button>
-          <Icon src={whatsapp} alt="whatsapp" />
-          <span className="hidden lg:inline">WhatsApp</span>
-        </Button>
-        <Button>
-          <FiInstagram size={22} />
-          <span className="hidden lg:inline">Instagram</span>
-        </Button>
-        <Button>
-          <FaFacebook size={22} />
-          <span className="hidden lg:inline">Facebook</span>
-        </Button>
-        <Button>
-          <FaPhone />
-          <span>(0223) 477 3452</span>
-        </Button>
-        <Button>
-          <FiMail />
-          <span>comsaarrigo@gmail.com</span>
-        </Button>
+        <a href={WHATSAPP_URL} target="__blank">
+          <Button>
+            <Icon src={whatsapp} alt="whatsapp" />
+            <span className="hidden lg:inline">WhatsApp</span>
+          </Button>
+        </a>
+        <a href={INSTAGRAM_URL} target="__blank">
+          <Button>
+            <FiInstagram size={22} />
+            <span className="hidden lg:inline">Instagram</span>
+          </Button>
+        </a>
+        <a href={FACEBOOK_URL} target="__blank">
+          <Button>
+            <FaFacebook size={22} />
+            <span className="hidden lg:inline">Facebook</span>
+          </Button>
+        </a>
+        <a href={PHONE_URL} target="__blank">
+          <Button>
+            <FaPhone />
+            <span>(0223) 477 3452</span>
+          </Button>
+        </a>
+        <a href={MAIL_URL} target="__blank">
+          <Button>
+            <FiMail />
+            <span>comsaarrigo@gmail.com</span>
+          </Button>
+        </a>
       </div>
-      <Card className="flex-col items-stretch bg-gray-100 text-black">
-        <Subtitle>¡Envianos un mensaje directo!</Subtitle>
-        <div className="flex flex-wrap gap-4">
-          <Input
-            {...setter("name")}
-            className="flex-1"
-            placeholder="Nombre y Apellido"
-          />
-          <Input
-            {...setter("email")}
-            className="flex-1"
-            placeholder="Correo electrónico"
-          />
-        </div>
-        <Textarea {...setter("message")} placeholder="Mensaje" />
-        <Button variant="primary" className="justify-center md:self-end">
-          Enviar mensaje
-        </Button>
-      </Card>
+      <ContactForm />
     </div>
   );
 };

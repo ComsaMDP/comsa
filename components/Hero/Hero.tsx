@@ -7,6 +7,7 @@ import { Stack } from "../Stack";
 import { Background } from "../Background";
 import { ServicesRow } from "./ServicesRow";
 import heroBackground from "../../assets/hero_background.png";
+import { useNav } from "../../hooks/useNav";
 
 export const Hero = () => {
   return (
@@ -18,8 +19,10 @@ export const Hero = () => {
 };
 
 const Content = () => {
+  const { goToContact } = useNav();
+
   return (
-    <div className="container relative z-10 mx-auto flex h-full flex-col items-center justify-start gap-10 px-4 pt-32 md:items-start md:justify-center md:gap-16 md:pt-16 lg:px-8">
+    <section className="container relative z-10 mx-auto flex h-full flex-col items-center justify-start gap-10 px-4 pt-32 md:items-start md:justify-center md:gap-16 md:pt-16 lg:px-8">
       <CertificateCard />
       <Logo />
       <Divider />
@@ -33,8 +36,10 @@ const Content = () => {
         <Subtitle className="text-center font-light text-white md:text-left md:font-semibold">
           Solicite su presupuesto sin cargo
         </Subtitle>
-        <Button variant="primary">¡Contactanos!</Button>
+        <Button variant="primary" onClick={goToContact}>
+          ¡Contactanos!
+        </Button>
       </div>
-    </div>
+    </section>
   );
 };

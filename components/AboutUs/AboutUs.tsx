@@ -1,4 +1,4 @@
-import { Container } from "../Container";
+import { SectionContainer } from "../SectionContainer";
 import { Divider } from "../Divider";
 import { Item } from "../Item";
 import { Paragraph, Subtitle, Title } from "../Text";
@@ -8,10 +8,13 @@ import aboutUs2 from "../../assets/about_us_2.png";
 import aboutUs3 from "../../assets/about_us_3.png";
 import Image from "next/image";
 import { Button } from "../Button";
+import { useNav } from "../../hooks/useNav";
 
 export const AboutUs = () => {
+  const { goToContact } = useNav();
+
   return (
-    <Container id="about-us">
+    <SectionContainer id="about-us">
       <Title>¿Quienes somos?</Title>
       <Divider />
       <div className="flex flex-wrap gap-4">
@@ -77,10 +80,14 @@ export const AboutUs = () => {
           circunstancias, por eso le damos tanta importancia a la visita previa
           para el diseño del Plan de Manejo Integral de Plagas.
         </Paragraph>
-        <Button variant="primary" className="mt-4 justify-center md:self-start">
+        <Button
+          variant="primary"
+          className="mt-4 justify-center md:self-start"
+          onClick={goToContact}
+        >
           ¡Solicite su presupuesto!
         </Button>
       </div>
-    </Container>
+    </SectionContainer>
   );
 };

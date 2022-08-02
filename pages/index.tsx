@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Home from "../components/Home";
+import { ServicesProvider } from "../hooks/useServices";
 
 const App: NextPage = () => {
   return (
@@ -13,7 +14,9 @@ const App: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Home />
+      <ServicesProvider>
+        <Home />
+      </ServicesProvider>
     </div>
   );
 };
