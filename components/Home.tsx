@@ -12,8 +12,12 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Comsa</title>
+        <title>COMSA</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Manejo integrado de plagas en General Pueyrredón. Control de plagas Mar del Plata"
+        ></meta>
       </Head>
       <Header />
       <div className="flex flex-col">
