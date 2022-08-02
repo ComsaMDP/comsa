@@ -38,6 +38,7 @@ export const ContactForm = () => {
     if (!formRef?.current) return;
 
     setStatus("sending");
+    setTimeout(() => setStatus("sent"), 1500);
 
     // Enviar mensaje
     const message = `Nombre: ${data.name}\n\nEmail: ${data.email}\n\nNúmero: ${data.number}\n\nCiudad: ${data.city}\n\n${data.message}`;
@@ -45,7 +46,6 @@ export const ContactForm = () => {
       WHATSAPP_API_PHONE,
       encodeURI(message)
     );
-    if (res) setStatus("sent");
   };
 
   return (
@@ -112,8 +112,8 @@ export const ContactForm = () => {
             status !== "sent" && "hidden"
           )}
         >
-          <Title className="text-primary">¡Mensaje enviado!</Title>
-          <Subtitle>Gracias por contactarnos</Subtitle>
+          <Subtitle className="text-primary">¡Mensaje enviado!</Subtitle>
+          <span className="text-black ">Gracias por contactarnos</span>
         </div>
       </div>
     </Card>
