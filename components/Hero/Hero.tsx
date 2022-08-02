@@ -25,9 +25,9 @@ const Content = () => {
     <section className="container relative z-10 mx-auto h-full gap-8 px-4 pt-32 lg:px-8">
       <div className="flex h-4/5 w-full flex-col items-center justify-between md:items-start md:justify-center">
         <CertificateCard />
-        <div className="flex flex-1 flex-col justify-center gap-12 pt-10">
+        <div className="flex flex-1 flex-col items-center justify-center gap-12 pt-10 md:items-start">
           <Logo />
-          <Divider className="" />
+          <Divider />
           <div className="flex flex-col items-center gap-8 md:items-start">
             <Title className="text-center text-white">
               Líderes en Manejo Integrado de Plagas
