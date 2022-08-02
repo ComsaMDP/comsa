@@ -12,7 +12,7 @@ export const Services = () => {
     <SectionContainer id={"services"}>
       <Title>Servicios</Title>
       <Divider />
-      <Subtitle>Manejo integrado de plagas</Subtitle>
+      <Subtitle>Manejo Integrado de Plagas</Subtitle>
       <div className="flex flex-wrap gap-4">
         <Item>Ratas / Ratones</Item>
         <Item>Murciélagos</Item>
