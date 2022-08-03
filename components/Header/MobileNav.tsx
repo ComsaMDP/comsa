@@ -38,7 +38,7 @@ export const MobileNav = ({ isOpen, close }: Props) => {
         )}
       >
         <MobileNavLink onClick={getOnNavLink(goToAboutUs)}>
-          Quienes somos
+          Quiénes somos
         </MobileNavLink>
         <div className="h-px w-full bg-slate-300" />
         <MobileNavLink onClick={getOnNavLink(goToServices)}>
@@ -49,7 +49,7 @@ export const MobileNav = ({ isOpen, close }: Props) => {
           onClick={getOnNavLink(goToContact)}
           className="text-xl text-primary"
         >
-          ¡Contáctanos!
+          ¡Contactanos!
         </MobileNavLink>
       </ul>
       <div className="w-full flex-1 cursor-pointer" onClick={close} />

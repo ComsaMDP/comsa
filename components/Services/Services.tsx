@@ -45,16 +45,18 @@ export const Services = () => {
         <div className="flex flex-1 flex-col gap-4">
           <ul className="flex min-w-[200px] list-disc flex-col gap-3 pl-6">
             <ListItem>
-              Minimizando el uso de agroquímicos y volcándonos a tareas
+              Minimizamos el uso de agroquímicos y volcándonos a tareas
               preventivas como son: la exclusión, sellado de grietas,
-              saneamiento, inspecciones, etc
+              saneamiento e inspecciones.
             </ListItem>
-            <ListItem>Efectuamos control químico y control no químico</ListItem>
+            <ListItem>
+              Efectuamos control químico y control no químico.
+            </ListItem>
             <ListItem>
               Realizamos seguimiento y monitoreo (con la correspondiente entrega
               de informes periódicos) asesoramiento integral, entre otras.
             </ListItem>
-            <ListItem>Entregamos Manuales MIP adaptados a cada firma</ListItem>
+            <ListItem>Entregamos Manuales MIP adaptados a cada firma.</ListItem>
           </ul>
         </div>
       </div>

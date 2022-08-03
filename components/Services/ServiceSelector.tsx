@@ -77,16 +77,17 @@ const ServiceSelectorItem = ({ service }: { service: Service }) => {
       <>
         <Subtitle>Desratización</Subtitle>
         <Paragraph>
-          Dar prioridad a exclusión y saneamiento del medio con la visita previa
+          Damos prioridad a la exclusión y saneamiento del medio con la visita
+          previa.
         </Paragraph>
         <Paragraph>
           Si bien cada lugar y situación requieren de una forma particular de
           tratamiento, habitualmente, el resultado más efectivo se logra con una
-          cuidadosa aplicación de cebos sólidos (fresco o secos) a base de
-          diversos atrayentes combinados con drogas de acción anticoagulante,
-          los cuales, una vez ingeridos, provocarán la muerte del roedor a los
-          pocos días, evitando el efecto de desconfianza. Cada variedad de cebo
-          es elegida de acuerdo al lugar donde se localiza el problema y a la
+          cuidadosa aplicación de cebos sólidos (frescos o secos) a base de
+          diversos atrayentes combinados con drogas de acción anticoagulante.
+          Una vez ingeridos, estos provocarán la muerte del animal a los pocos
+          días, evitando el efecto de desconfianza. Cada variedad de cebo es
+          elegida de acuerdo al lugar donde se localiza el problema y a la
           apetencia de los roedores. Todos estos sistemas se complementan con
           trampas de pegamento y trampas de captura viva.
         </Paragraph>
@@ -102,22 +103,16 @@ const ServiceSelectorItem = ({ service }: { service: Service }) => {
           sanitaria. Para ello, hemos seleccionado una gama de insecticidas que
           por separado o en mezclas perfectamente calculadas y formuladas
           permiten su control, aún cuando sean tan disímiles entre sí como los
-          caminadores (cucarachas, vinchucas) saltadores (pulgas) o voladores
-          (moscas, mosquitos).
-        </Paragraph>
-        <Paragraph>
-          Las aplicaciones se realizan con pulverizadores manuales, a mochila
-          y/o eléctricos.
+          caminadores (cucarachas, vinchucas), saltadores (pulgas) o voladores
+          (moscas, mosquitos). Las aplicaciones se realizan con pulverizadores
+          manuales, a mochila y/o eléctricos.
         </Paragraph>
         <Paragraph>
           En grandes ambientes son utilizados equipos a motor, de alto
           rendimiento y gran poder de penetración y alcance. En casos
           especiales, realizamos la aplicación de estos insecticidas mediante el
-          sistema de termofumigación.
-        </Paragraph>
-        <Paragraph>
-          Lo destacable: estas tareas pueden hacerse sin provocar contaminación,
-          manchas u olores desagradables.
+          sistema de termofumigación. Lo destacable: estas tareas pueden hacerse
+          sin provocar contaminación, manchas u olores desagradables.
         </Paragraph>
       </>
     );
@@ -129,9 +124,9 @@ const ServiceSelectorItem = ({ service }: { service: Service }) => {
           El tratamiento de desinfección está destinado a controlar hongos,
           bacterias y virus para lograr una disminución del contagio de
           enfermedades en plantas industriales, bancos, comercios, escuelas,
-          etc., mediante pulverizaciones con poderosos germicidas especialmente
-          en baños, vestuarios, lugares de gran circulación de personas y
-          lugares afectados.
+          entre otros. Se aplica mediante pulverizaciones con poderosos
+          germicidas especialmente en baños, vestuarios, lugares de gran
+          circulación de personas y lugares afectados.
         </Paragraph>
       </>
     );
@@ -140,12 +135,12 @@ const ServiceSelectorItem = ({ service }: { service: Service }) => {
       <>
         <Subtitle>Control de murciélagos</Subtitle>
         <Paragraph>
-          Por los beneficios ecosistémicos que los muercielos ofrecen,
-          procuramos su relocalización el lugares donde no sean molestos y sigan
+          Por los beneficios ecosistémicos que los murciélagos ofrecen,
+          procuramos su relocalización en lugares donde no sean molestos y sigan
           protegiéndonos contra insectos.
         </Paragraph>
         <Paragraph>
-          Una vez expulsados los ejemplados se realiza un cerramiento en la
+          Una vez expulsados los ejemplares se realiza un cerramiento en la
           aberturas a fin de impedir su reingreso.
         </Paragraph>
       </>
@@ -158,18 +153,15 @@ const ServiceSelectorItem = ({ service }: { service: Service }) => {
           En caso de que su propiedad o ambiente de trabajo se haya expuesto al
           COVID-19 lo desinfectamos con amonio cuaternario con un equipo de
           ultrabajo volumen, con lo que un departamento de dos o tres ambientes
-          se puede hacer muy rápidamente y muy eficazmente. Lo cual es un
-          procedimiento rápido, económico y muy fácil de hacer, con absoluta
-          garantía de los resultados.
+          se puede hacer muy rápida y eficazmente. Se trata de un procedimiento
+          rápido, económico y muy fácil de hacer, con absoluta garantía de los
+          resultados. Estos trabajos no hacen más que pedirlos y se pueden
+          realizar en aproximadamente media hora; el ambiente tiene que quedar 1
+          o 2 horas desocupado para que actúe bien el producto y se puede usar
+          sin ningún problema.
         </Paragraph>
         <Paragraph>
-          Estos trabajos no hacen más que pedirlos y se pueden realizar en
-          aproximadamente media hora el ambiente tiene que quedar 1 o 2 horas
-          desocupado para que actue bien el producto y se puede usa sin ningún
-          problema.
-        </Paragraph>
-        <Paragraph>
-          Como estos trabajos se realizan con un equipo de ultra bajo volúmen es
+          Como estos trabajos se realizan con un equipo de ultra bajo volumen es
           mínima la cantidad de líquido que se utiliza, eso envuelve todas las
           superficies y todos los materiales que haya en el lugar y quedan
           totalmente desinfectados sin necesidad de secado o de limpieza

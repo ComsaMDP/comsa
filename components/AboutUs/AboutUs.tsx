@@ -15,7 +15,7 @@ export const AboutUs = () => {
 
   return (
     <SectionContainer id="about-us">
-      <Title>¿Quienes somos?</Title>
+      <Title>¿Quiénes somos?</Title>
       <Divider />
       <div className="flex flex-wrap gap-4">
         <Item>
@@ -30,16 +30,17 @@ export const AboutUs = () => {
       <div className="flex flex-col gap-4">
         <Paragraph>
           Desde 1972 somos la empresa líder en Manejo Integrado de Plagas (MIP)
-          en casas de familia, comercios e industrias, y hemos desarrollado
+          en casas de familia, comercios e industrias y hemos desarrollado
           métodos y programas de trabajo que nos permiten asegurar un máximo de
           efectividad en nuestras tareas. Analizamos cada situación y utilizamos
           los métodos y materias primas más adecuados para cada necesidad.
         </Paragraph>
         <Paragraph>
           Cada servicio es avalado por nuestro Ingeniero Agrónomo, Raúl Arrigo,
-          especialista en insectos y roedores, y nuestra Ingeniera Ambiental,
-          María Gisela Arrigo, a fin de alcanzar el control más eficiente de las
-          plagas protegiendo el medio ambiente y la salud de las personas.
+          especialista en insectos y roedores, y por nuestra Ingeniera
+          Ambiental, María Gisela Arrigo, a fin de alcanzar el control más
+          eficiente de las plagas protegiendo el medio ambiente y la salud de
+          las personas.
         </Paragraph>
       </div>
       <div className="flex gap-4">
@@ -52,7 +53,7 @@ export const AboutUs = () => {
         <Paragraph>
           COMSA es la empresa de Manejo Integrado de Plagas con más experiencia
           del Partido de General Pueyrredon. Dirigida por profesionales
-          especializados en la materia. Nuestro personal cuenta con muchos años
+          especializados en la materia, nuestro personal cuenta con muchos años
           de experiencia y realiza capacitaciones de forma constante. Además,
           contamos con maquinaria de última generación.
         </Paragraph>
@@ -63,20 +64,20 @@ export const AboutUs = () => {
           cumplimiento a las disposiciones legales vigentes en la materia.
         </Paragraph>
         <Paragraph>
-          Los productos que utilizamos están Certificados por ANMAT
+          Los productos que utilizamos están certificados por ANMAT
           (Administración Nacional de Medicamentos, Alimentos y Tecnología
           Médica) y SENASA (Servicio Nacional de Sanidad y Calidad
           Agroalimentaria).
         </Paragraph>
         <Paragraph>
           Adaptamos nuestros servicios a sus necesidades, realizando una
-          evaluación pormenorizada del problema para lograr una solución lo más
-          apropiada, priorizando la no utilización de productos químicos, y en
+          evaluación pormenorizada del problema para lograr la solución más
+          apropiada, priorizando la no utilización de productos químicos y, en
           caso de hacerlo, nuestros productos no dañan al medio ambiente.
         </Paragraph>
         <Paragraph>
           Nuestros servicios no son estándar, ni tenemos una receta única ante
-          el mismo problema, sino que nos adaptamos a cada lugar y sus
+          el mismo problema sino que nos adaptamos a cada lugar y sus
           circunstancias, por eso le damos tanta importancia a la visita previa
           para el diseño del Plan de Manejo Integral de Plagas.
         </Paragraph>
@@ -85,7 +86,7 @@ export const AboutUs = () => {
           className="mt-4 justify-center md:self-start"
           onClick={goToContact}
         >
-          ¡Solicite su presupuesto!
+          ¡Solicite su Presupuesto Sin Cargo!
         </Button>
       </div>
     </SectionContainer>

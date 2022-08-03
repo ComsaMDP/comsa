@@ -14,13 +14,13 @@ export const CertificateCard = () => {
       <span className="flex-1 text-base font-light text-white md:text-xl">
         <span className="hidden lg:inline">
           Empresa <B>habilitada</B> y <B>autorizada</B> por la Provincia de
-          Buenos Aires y Municipalidad de General Pueyrredón. Se{" "}
-          <B>emiten certificados</B> por cada trabajo realizado. Lo que permite
+          Buenos Aires y por la Municipalidad de General Pueyrredon. Se{" "}
+          <B>emiten certificados</B> por cada trabajo realizado, lo que permite
           dar cumplimiento a las disposiciones legales vigentes en la materia.
         </span>
         <span className="lg:hidden">
-          Empresa <B>habilitada</B> y <B>autorizada</B> por PBA y MGP.{" "}
-          <B>Se emiten certificados</B> por trabajo.
+          Empresa <B>habilitada</B> y <B>autorizada</B> por PBA y por la MGP.{" "}
+          <B>Se emiten certificados</B> por trabajo realizado.
         </span>
       </span>
     </DarkCard>

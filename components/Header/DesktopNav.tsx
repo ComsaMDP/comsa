@@ -10,13 +10,13 @@ export const DesktopNav = () => {
     <nav className="hidden md:flex">
       <ul className="flex items-center gap-8">
         <li onClick={goToAboutUs}>
-          <NavLink>Quienes somos</NavLink>
+          <NavLink>Quiénes somos</NavLink>
         </li>
         <li onClick={goToServices}>
           <NavLink>Servicios</NavLink>
         </li>
         <li onClick={goToContact}>
-          <Button variant="dark">¡Contáctanos!</Button>
+          <Button variant="dark">¡Contactanos!</Button>
         </li>
       </ul>
     </nav>
