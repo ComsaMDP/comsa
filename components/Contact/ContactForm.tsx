@@ -41,7 +41,7 @@ export const ContactForm = () => {
     setTimeout(() => setStatus("sent"), 1500);
 
     // Enviar mensaje
-    const message = `Nombre: ${data.name}\n\nEmail: ${data.email}\n\nNúmero: ${data.number}\n\nCiudad: ${data.city}\n\n${data.message}`;
+    const message = `🖐🏻 ${data.name}\n✉️ ${data.email}\n📞 ${data.number}\n🏘️ ${data.city}\n\n${data.message}`;
     const res = await sendWhatsAppMessage(
       WHATSAPP_API_PHONE,
       encodeURI(message)
