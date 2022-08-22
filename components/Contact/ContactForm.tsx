@@ -40,11 +40,16 @@ export const ContactForm = () => {
     setStatus("sending");
     setTimeout(() => setStatus("sent"), 1500);
 
-    // Enviar mensaje
-    const message = `🖐🏻 ${data.name}\n✉️ ${data.email}\n📞 ${data.number}\n🏘️ ${data.city}\n\n${data.message}`;
+    let text = [];
+    if (data.name) text.push(`🖐🏻 ${data.name}`);
+    if (data.email) text.push(`✉️ ${data.email}`);
+    if (data.number) text.push(`📞 ${data.number}`);
+    if (data.city) text.push(`🏘️ ${data.city}`);
+    if (data.message) text.push(`\n${data.message}`);
+
     const res = await sendWhatsAppMessage(
       WHATSAPP_API_PHONE,
-      encodeURI(message)
+      encodeURI(text.join("\n"))
     );
   };
 
