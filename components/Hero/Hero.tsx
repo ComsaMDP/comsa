@@ -11,7 +11,7 @@ import { useNav } from "../../hooks/useNav";
 
 export const Hero = () => {
   return (
-    <div className="relative h-screen max-h-[1080px]  w-full">
+    <div className="relative h-screen max-h-[1080px] min-h-[740px]  w-full">
       <Background src={heroBackground} alt="control de plagas" priority />
       <Content />
     </div>
