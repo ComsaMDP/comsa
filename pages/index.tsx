@@ -17,7 +17,7 @@ const App: NextPage = () => {
       </Head>
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-RRYZJZ0E7G"
+        src="https://www.googletagmanager.com/gtag/js?id=G-Z2M2FGMDTT"
       ></Script>
       <Script id="google-analytics" strategy="afterInteractive">
         {`
@@ -25,7 +25,7 @@ const App: NextPage = () => {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
         
-          gtag('config', 'G-RRYZJZ0E7G');
+          gtag('config', 'G-Z2M2FGMDTT');
         `}
       </Script>
       <ServicesProvider>
