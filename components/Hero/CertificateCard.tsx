@@ -27,7 +27,3 @@ export const CertificateCard = () => {
     </DarkCard>
   );
 };
-
-/* 
-Empresa habilitada y autorizada por el Ministerio de Salud de La Nación, la Provincia de Buenos Aires y por la Municipalidad de General Pueyrredon
-*/
