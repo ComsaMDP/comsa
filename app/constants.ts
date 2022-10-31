@@ -12,7 +12,7 @@ export const INSTAGRAM_URL =
   "https://www.instagram.com/comsa_saneamiento_ambiental/";
 
 export const WHATSAPP_URL =
-  "https://api.whatsapp.com/send?text=Buen%20d%C3%ADa%20quisiera%20consultar%20sobre%20&phone=542235247784";
+  "https://api.whatsapp.com/send?text=Buen%20d%C3%ADa%20quisiera%20consultar%20sobre%20&phone=542235251041";
 
 export const FACEBOOK_URL =
   "https://www.facebook.com/Comsa-Saneamiento-Ambiental-110799967470557/";
