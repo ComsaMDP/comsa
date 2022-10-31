@@ -26,6 +26,6 @@ export const VALENTINO_GUERRA_URL =
 
 export const WHATSAPP_API_URL = "https://api.callmebot.com/whatsapp.php";
 
-export const WHATSAPP_API_KEY = "328366";
+export const WHATSAPP_API_KEY = "6915946";
 
-export const WHATSAPP_API_PHONE = "+5492235247784";
+export const WHATSAPP_API_PHONE = "+5492235251041";
