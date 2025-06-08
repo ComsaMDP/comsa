@@ -19,28 +19,35 @@ export const AboutUs = () => {
       <Divider />
       <div className="flex flex-wrap gap-4">
         <Item>
-          Raúl Arrigo <div className="h-full w-px bg-gray-300" /> Ingeniero
-          Agrónomo
-        </Item>
-        <Item>
           María Gisela Arrigo <div className="h-full w-px bg-gray-300" />
           Ingeniera Ambiental
+        </Item>
+        <Item>
+          Raúl Arrigo <div className="h-full w-px bg-gray-300" /> Ingeniero
+          Agrónomo
         </Item>
       </div>
       <div className="flex flex-col gap-4">
         <Paragraph>
-          Desde 1972 somos la empresa líder en Manejo Integrado de Plagas (MIP)
-          en casas de familia, comercios e industrias y hemos desarrollado
-          métodos y programas de trabajo que nos permiten asegurar un máximo de
-          efectividad en nuestras tareas. Analizamos cada situación y utilizamos
-          los métodos y materias primas más adecuados para cada necesidad.
+          Nuestra empresa cuenta con 54 años de experiencia en el tema,
+          comprobables, mediante los certificados emitidos por las autoridades
+          competentes. Además, garantizamos el resultado de los trabajos y la
+          satisfacción del cliente. Esto es posible por la calidad de los
+          productos utilizados, su variedad, la moderna maquinaria de aplicación
+          y ser una empresa fundada por el Ingeniero Agrónomo Raúl Agustín
+          Arrigo con 52 años de especialización en el tema comprobables,
+          mediante los certificados emitidos por las autoridades competentes ya
+          que en 1974 tenía experiencia suficiente como para dictar cursos de
+          capacitación sobre el tema “Control de Plagas” a médicos, enfermeros,
+          docentes, etc.
         </Paragraph>
         <Paragraph>
-          Cada servicio es avalado por nuestro Ingeniero Agrónomo, Raúl Arrigo,
-          especialista en insectos y roedores, y por nuestra Ingeniera
-          Ambiental, María Gisela Arrigo, a fin de alcanzar el control más
-          eficiente de las plagas protegiendo el medio ambiente y la salud de
-          las personas.
+          Por otro lado, la Ingeniera Ambiental, también especializada en Manejo
+          Integrado de Plagas, analiza cada trabajo para poder brindar el
+          servicio más sustentable posible, primando como estrategia principal
+          el trabajo en conjunto con el cliente en la exclusión, limpieza, etc.,
+          y a la hora de utilizar productos químicos, que estos sean amigables
+          con el medio ambiente.
         </Paragraph>
       </div>
       <div className="flex gap-4">
